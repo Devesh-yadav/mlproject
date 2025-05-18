@@ -15,15 +15,16 @@ This is a machine learning web application that predicts a student's math score 
 ---
 
 ## 🧱 Project Structure
-
+```text
 mlproject/
-├── src/ # Training, prediction, and utility code
-├── notebook/ # EDA and model experimentation
-├── templates/ # HTML template for web UI
-├── application.py # Flask app entry point
-├── requirements.txt # Dependencies
-├── setup.py # Setup for packaging
-└── .ebextensions/ # EB configuration
+├── src/               # Training, prediction, and utility code
+├── notebook/          # EDA and model experimentation
+├── templates/         # HTML template for web UI
+├── application.py     # Flask app entry point
+├── requirements.txt   # Dependencies
+├── setup.py           # Setup for packaging
+└── .ebextensions/     # EB configuration
+```
 
 
 ---
