@@ -1,7 +1,5 @@
-from flask import Flask,render_template,request
-""" import numpy as np
-import pandas as pd
-from sklearn.preprocessing import StandardScaler """
+from flask import Flask,render_template,request,jsonify
+
 from src.utils import load_object
 from src.pipeline.predict_pipeline import CustomData,PredictPipeline
 
@@ -36,8 +34,9 @@ def predict_datapoint():
         print("Mid Prediction")
         results = predict_pipeline.predict(pred_df)
         formatted_result = f"{results[0]:.2f}"
-
-        return render_template('home.html', results=formatted_result)
+        
+        return jsonify({"prediction": formatted_result})
+        #return render_template('home.html', results=formatted_result)
 
     
 
